@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Git\ChinookRESTierAPI\ChinookRESTier.API" t="IncludeFlat">
+      <e p="ChinookRESTier.API" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="WebApiConfig.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChinookRESTier.API.csproj" t="IncludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ChinookAPI.cs" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Album.cs" t="Include" />
+          <e p="Artist.cs" t="Include" />
+          <e p="ChinookModel.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="Employee.cs" t="Include" />
+          <e p="Genre.cs" t="Include" />
+          <e p="Invoice.cs" t="Include" />
+          <e p="InvoiceLine.cs" t="Include" />
+          <e p="MediaType.cs" t="Include" />
+          <e p="Playlist.cs" t="Include" />
+          <e p="Track.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="ChinookRESTier.API.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\cwood\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\cwood\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ChinookRESTier.API.1034130468.00" t="ExcludeRecursive" />
+  </component>
+</project>
