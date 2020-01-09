@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -9,6 +10,7 @@ using Microsoft.Restier.EntityFramework;
 
 namespace ChinookRESTier.API.Controllers
 {
+    [SuppressMessage("ReSharper", "UnusedMember.Global")]
     public class ChinookApi : EntityFrameworkApi<ChinookModel>
     {
         public ChinookApi(IServiceProvider serviceProvider) : base(serviceProvider)
@@ -16,7 +18,7 @@ namespace ChinookRESTier.API.Controllers
         }
 
         #region Album functions
-        protected internal bool CanInertAlbums()
+        protected internal bool CanInsertAlbums()
         {
             return true;
         }
@@ -85,7 +87,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region Artist functions
-        protected internal bool CanInertArtists()
+        protected internal bool CanInsertArtists()
         {
             return true;
         }
@@ -154,7 +156,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region Customer functions
-        protected internal bool CanInertCustomers()
+        protected internal bool CanInsertCustomers()
         {
             return true;
         }
@@ -223,7 +225,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region Employee functions
-        protected internal bool CanInertEmployees()
+        protected internal bool CanInsertEmployees()
         {
             return true;
         }
@@ -292,7 +294,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region Genre functions
-        protected internal bool CanInertGenres()
+        protected internal bool CanInsertGenres()
         {
             return true;
         }
@@ -361,7 +363,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region Invoice functions
-        protected internal bool CanInertInvoices()
+        protected internal bool CanInsertInvoices()
         {
             return true;
         }
@@ -430,7 +432,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region InvoiceLine functions
-        protected internal bool CanInertInvoiceLines()
+        protected internal bool CanInsertInvoiceLines()
         {
             return true;
         }
@@ -499,7 +501,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region MediaType functions
-        protected internal bool CanInertMediaTypes()
+        protected internal bool CanInsertMediaTypes()
         {
             return true;
         }
@@ -568,7 +570,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region Playlist functions
-        protected internal bool CanInertPlaylists()
+        protected internal bool CanInsertPlaylists()
         {
             return true;
         }
@@ -637,7 +639,7 @@ namespace ChinookRESTier.API.Controllers
         #endregion
 
         #region Track functions
-        protected internal bool CanInertTracks()
+        protected internal bool CanInsertTracks()
         {
             return true;
         }
@@ -715,6 +717,9 @@ namespace ChinookRESTier.API.Controllers
                 throw new ArgumentNullException(nameof(album));
             }
             Console.WriteLine($"Id = {album.AlbumId}");
+            
+            // Code would be here to actually place album into user's cart
+            
             album.Title += " | placed in cart";
             return album;
         }
@@ -727,6 +732,9 @@ namespace ChinookRESTier.API.Controllers
                 throw new ArgumentNullException(nameof(track));
             }
             Console.WriteLine($"Id = {track.TrackId}");
+            
+            // Code would be here to actually place track into user's cart
+            
             track.Name += " | placed in cart";
             return track;
         }
