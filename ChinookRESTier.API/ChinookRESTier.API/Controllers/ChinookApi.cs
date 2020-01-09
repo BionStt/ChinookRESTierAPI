@@ -31,10 +31,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateAlbums()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<Album> OnFilterAlbums(IQueryable<Album> entitySet)
@@ -100,10 +102,11 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateArtists()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+            return true;
         }
 
         protected internal IQueryable<Artist> OnFilterArtists(IQueryable<Artist> entitySet)
@@ -169,10 +172,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateCustomers()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<Customer> OnFilterCustomers(IQueryable<Customer> entitySet)
@@ -238,10 +243,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateEmployees()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<Employee> OnFilterEmployees(IQueryable<Employee> entitySet)
@@ -307,10 +314,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateGenres()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<Genre> OnFilterGenres(IQueryable<Genre> entitySet)
@@ -376,10 +385,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateInvoices()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<Invoice> OnFilterInvoices(IQueryable<Invoice> entitySet)
@@ -445,10 +456,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateInvoiceLines()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<InvoiceLine> OnFilterInvoiceLines(IQueryable<InvoiceLine> entitySet)
@@ -514,10 +527,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateMediaTypes()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<MediaType> OnFilterMediaTypes(IQueryable<MediaType> entitySet)
@@ -583,10 +598,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdatePlaylists()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<Playlist> OnFilterPlaylists(IQueryable<Playlist> entitySet)
@@ -652,10 +669,12 @@ namespace ChinookRESTier.API.Controllers
         protected internal bool CanUpdateTracks()
         {
             // Use claims-based security
-            return ClaimsPrincipal.Current.IsInRole("admin");
+            //return ClaimsPrincipal.Current.IsInRole("admin");
 
             // You can also use legacy role-based security, though it's harder to test.
             //return HttpContext.Current.User.IsInRole("admin");
+
+            return true;
         }
 
         protected internal IQueryable<Track> OnFilterTracks(IQueryable<Track> entitySet)
