@@ -34,8 +34,7 @@ namespace ChinookRESTier.API
                 {
                     MaxTop = 5,
                     MaxAnyAllExpressionDepth = 3,
-                    MaxExpansionDepth = 3, 
-
+                    MaxExpansionDepth = 3
                 });
             });
 

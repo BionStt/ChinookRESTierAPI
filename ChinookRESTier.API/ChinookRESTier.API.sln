@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookRESTier.API", "ChinookRESTier.API\ChinookRESTier.API.csproj", "{D0DB4534-89CD-438F-9F20-F5ADFB8C52D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookRESTier.Client", "ChinookRESTier.Client\ChinookRESTier.Client.csproj", "{0BBE2EE3-D8C6-4264-83AD-81136AB4F98D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookRESTier.Tests", "ChinookRESTier.Tests\ChinookRESTier.Tests.csproj", "{2617C2C3-603E-4573-9655-D8F3577B8642}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D0DB4534-89CD-438F-9F20-F5ADFB8C52D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0DB4534-89CD-438F-9F20-F5ADFB8C52D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0DB4534-89CD-438F-9F20-F5ADFB8C52D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BBE2EE3-D8C6-4264-83AD-81136AB4F98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBE2EE3-D8C6-4264-83AD-81136AB4F98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBE2EE3-D8C6-4264-83AD-81136AB4F98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBE2EE3-D8C6-4264-83AD-81136AB4F98D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2617C2C3-603E-4573-9655-D8F3577B8642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2617C2C3-603E-4573-9655-D8F3577B8642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2617C2C3-603E-4573-9655-D8F3577B8642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2617C2C3-603E-4573-9655-D8F3577B8642}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
