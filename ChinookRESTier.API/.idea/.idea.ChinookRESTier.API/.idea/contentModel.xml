@@ -3,7 +3,6 @@
   <component name="ContentModelStore">
     <e p="C:\Git\ChinookRESTierAPI\ChinookRESTier.API" t="IncludeFlat">
       <e p="ChinookRESTier.API" t="IncludeRecursive">
-        <e p="App_Data" t="Include" />
         <e p="App_Start" t="Include">
           <e p="WebApiConfig.cs" t="Include" />
         </e>
